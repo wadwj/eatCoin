@@ -66,7 +66,7 @@ export async function init (obj) {
   obstacle.transform.setRotation(-60, 0, 0);
   obj.obstacleEntity = obstacle.clone();
   // 桥
-  const bridgeGltf = await engine.resourceManager.load('https://testoss.zjairports.com/h5/static/images/3D/bridgeUI.gltf');
+  const bridgeGltf = await engine.resourceManager.load('https://simple-1259493930.cos.ap-shanghai.myqcloud.com/simple-1259493930/adab5f593ab68fc1605200c06eff6ce9d5d0c25309f4a562fae9268cb27dc7cf.gltf');
   const bridgeEntity = bridgeGltf.defaultSceneRoot;
   rootEntity.addChild(bridgeEntity);
   bridgeEntity.transform.setPosition(0, -9, 12);
